@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <!-- Отображение категорий -->
+    <div class="categories">
+        <h2>Categories</h2>
+        <ul class="category-list">
+            {% for category in categories %}
+            <li>
+                <h3>{{ category.name }}</h3>
+                <ul class="post-list">
+                    {% for post in category.posts_set.all %}
+                    <li>
+                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                        <p>{{ post.content }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <!-- Display categories -->
+    <div class="categories">
+        <h2>Games</h2>
+        <ul class="category-list">
+            {% for category in categories %}
+            <li>
+                <h3><a href="{{ category.get_absolute_url }}">{{ category.name }}</a></h3>
+                <ul class="post-list">
+                    <li>
+                        {% for post in category.posts_set.all %}
+                        <p>{{ post.content }}</p>
+                        <a class="read-more" href="{{ post.get_absolute_url }}">Read more...</a>
+                        {% endfor %}
+                    </li>
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </div> <!-- Close the categories div here -->
+    <div class="container">
+        <h2>{{ title }}</h2>
+        {% if posts %}
+        <ul>
+            {% for post in posts %}
+            <li>
+                <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+                <p>{{ post.content }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No posts found for this tag.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
