@@ -1,0 +1,35 @@
+[
+    {
+        "model": "store.tag",
+        "pk": 1,
+        "fields": {
+            "name": "Open World",
+            "slug": "open-world"
+        }
+    },
+    {
+        "model": "store.tag",
+        "pk": 2,
+        "fields": {
+            "name": "Fantasy",
+            "slug": "fantasy"
+        }
+    },
+    {
+        "model": "store.tag",
+        "pk": 3,
+        "fields": {
+            "name": "Western",
+            "slug": "western"
+        }
+    },
+    {
+        "model": "store.tag",
+        "pk": 4,
+        "fields": {
+            "name": "Cyberpunk",
+            "slug": "cyberpunk"
+        }
+    }
+    // Добавьте другие теги...
+]

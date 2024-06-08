@@ -1,0 +1,35 @@
+[
+    {
+        "model": "store.category",
+        "pk": 1,
+        "fields": {
+            "name": "Action RPG",
+            "slug": "action-rpg"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 2,
+        "fields": {
+            "name": "Shooter",
+            "slug": "shooter"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 3,
+        "fields": {
+            "name": "Adventure",
+            "slug": "adventure"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 4,
+        "fields": {
+            "name": "Strategy",
+            "slug": "strategy"
+        }
+    }
+
+]

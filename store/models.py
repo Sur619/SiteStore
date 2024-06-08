@@ -24,9 +24,14 @@ class Posts(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True, db_index=True)
     slug = models.SlugField(max_length=100, unique=True, db_index=True)
+    image = models.ImageField(upload_to='category_images/', blank=True, null=True)  # Разрешаем пустое значение
+
+    def __str__(self):
+        return self.name
 
     def get_absolute_url(self):
-        return reverse('category')
+        return reverse('category', kwargs={"category_slug": self.slug})
+
 
 
 class TagPost(models.Model):
