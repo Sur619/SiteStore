@@ -13,6 +13,8 @@ class Posts(models.Model):
     is_published = models.BooleanField(default=False)
     category = models.ForeignKey('Category', on_delete=models.PROTECT)
     tags = models.ManyToManyField('TagPost', blank=True, related_name='tags')
+    image = models.ImageField(upload_to='posts/%Y/%m/%d/', blank=True)  # Удалено default='Null'
+    price = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 
     def __str__(self):
         return self.title
@@ -30,7 +32,7 @@ class Category(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('category', kwargs={"category_slug": self.slug})
+        return reverse('category')
 
 
 

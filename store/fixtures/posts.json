@@ -1,0 +1,345 @@
+[
+  {
+    "model": "store.posts",
+    "pk": 10,
+    "fields": {
+      "title": "Skyrim",
+      "slug": "skyrim",
+      "content": "The Elder Scrolls V: Skyrim is an open-world action RPG set in the fantasy world of Tamriel, known for its vast world and rich lore.",
+      "time_create": "2024-06-20T12:00:00Z",
+      "time_update": "2024-06-20T12:00:00Z",
+      "is_published": true,
+      "category": 6,
+      "image": null,
+      "price": 39.99,
+      "tags": [1, 2, 14]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 11,
+    "fields": {
+      "title": "Mortal Kombat 11",
+      "slug": "mortal-kombat-11",
+      "content": "Mortal Kombat 11 is a fighting game that features brutal combat, fatalities, and a roster of iconic characters from the Mortal Kombat series.",
+      "time_create": "2024-06-21T12:00:00Z",
+      "time_update": "2024-06-21T12:00:00Z",
+      "is_published": true,
+      "category": 11,
+      "image": null,
+      "price": 49.99,
+      "tags": [12, 13, 15]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 12,
+    "fields": {
+      "title": "Fallout 4",
+      "slug": "fallout-4",
+      "content": "Fallout 4 is an open-world action RPG set in a post-apocalyptic wasteland, where players must navigate through the ruins of Boston and survive.",
+      "time_create": "2024-06-22T12:00:00Z",
+      "time_update": "2024-06-22T12:00:00Z",
+      "is_published": true,
+      "category": 6,
+      "image": null,
+      "price": 29.99,
+      "tags": [3, 4, 16]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 13,
+    "fields": {
+      "title": "Super Mario Odyssey",
+      "slug": "super-mario-odyssey",
+      "content": "Super Mario Odyssey is a platformer adventure game where Mario travels through various kingdoms with his new companion, Cappy, to save Princess Peach from Bowser's wedding plans.",
+      "time_create": "2024-06-23T12:00:00Z",
+      "time_update": "2024-06-23T12:00:00Z",
+      "is_published": true,
+      "category": 7,
+      "image": null,
+      "price": 59.99,
+      "tags": [5, 6]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 14,
+    "fields": {
+      "title": "Doom Eternal",
+      "slug": "doom-eternal",
+      "content": "Doom Eternal is a first-person shooter game where players take on the role of the Doom Slayer to battle against demonic forces from Hell.",
+      "time_create": "2024-06-24T12:00:00Z",
+      "time_update": "2024-06-24T12:00:00Z",
+      "is_published": true,
+      "category": 4,
+      "image": null,
+      "price": 49.99,
+      "tags": [7, 8, 18]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 15,
+    "fields": {
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "slug": "zelda-breath-of-the-wild",
+      "content": "The Legend of Zelda: Breath of the Wild is an action-adventure game set in a vast open world where players can explore, solve puzzles, and battle enemies.",
+      "time_create": "2024-06-25T12:00:00Z",
+      "time_update": "2024-06-25T12:00:00Z",
+      "is_published": true,
+      "category": 6,
+      "image": null,
+      "price": 59.99,
+      "tags": [9, 10, 19]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 16,
+    "fields": {
+      "title": "Animal Crossing: New Horizons",
+      "slug": "animal-crossing-new-horizons",
+      "content": "Animal Crossing: New Horizons is a life simulation game where players build and customize their own island paradise, interact with villagers, and more.",
+      "time_create": "2024-06-26T12:00:00Z",
+      "time_update": "2024-06-26T12:00:00Z",
+      "is_published": true,
+      "category": 9,
+      "image": null,
+      "price": 49.99,
+      "tags": [11]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 17,
+    "fields": {
+      "title": "League of Legends",
+      "slug": "league-of-legends",
+      "content": "League of Legends is a multiplayer online battle arena game where players control characters known as champions and compete in fast-paced battles.",
+      "time_create": "2024-06-27T12:00:00Z",
+      "time_update": "2024-06-27T12:00:00Z",
+      "is_published": true,
+      "category": 6,
+      "image": null,
+      "price": 0,
+      "tags": [22]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 18,
+    "fields": {
+      "title": "Portal 2",
+      "slug": "portal-2",
+      "content": "Portal 2 is a puzzle-platform game where players use a portal gun to create inter-spatial portals and solve challenging puzzles.",
+      "time_create": "2024-06-28T12:00:00Z",
+      "time_update": "2024-06-28T12:00:00Z",
+      "is_published": true,
+      "category": 7,
+      "image": null,
+      "price": 19.99,
+      "tags": [11,21]
+    }
+  },
+
+
+  {
+    "model": "store.posts",
+    "pk": 19,
+    "fields": {
+      "title": "Bloodborne",
+      "slug": "bloodborne",
+      "content": "Bloodborne is an action RPG set in the gothic city of Yharnam, where players hunt terrifying beasts and uncover dark secrets in a bid to end the nightmarish plague that grips the land.",
+      "time_create": "2024-07-06T12:00:00Z",
+      "time_update": "2024-07-06T12:00:00Z",
+      "is_published": true,
+      "category": 8,
+      "image": null,
+      "price": 29.99,
+      "tags": [22, 1, 2]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 20,
+    "fields": {
+      "title": "Persona 5",
+      "slug": "persona-5",
+      "content": "Persona 5 is a role-playing game where players assume the role of a high school student who moonlights as a phantom thief, exploring dungeons, forming bonds, and battling supernatural enemies.",
+      "time_create": "2024-07-07T12:00:00Z",
+      "time_update": "2024-07-07T12:00:00Z",
+      "is_published": true,
+      "category": 9,
+      "image": null,
+      "price": 49.99,
+      "tags": [3, 4, 5]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 21,
+    "fields": {
+      "title": "Final Fantasy VII Remake",
+      "slug": "final-fantasy-vii-remake",
+      "content": "Final Fantasy VII Remake is a reimagining of the classic RPG, following the story of Cloud Strife and his allies as they battle the megacorporation Shinra and confront the mysterious Sephiroth.",
+      "time_create": "2024-07-08T12:00:00Z",
+      "time_update": "2024-07-08T12:00:00Z",
+      "is_published": true,
+      "category": 10,
+      "image": null,
+      "price": 59.99,
+      "tags": [6, 7, 8]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 22,
+    "fields": {
+      "title": "The Last of Us Part II",
+      "slug": "the-last-of-us-part-ii",
+      "content": "The Last of Us Part II is an action-adventure game that continues the story of Ellie and Joel in a post-apocalyptic world ravaged by the Cordyceps fungus infection, exploring themes of revenge and redemption.",
+      "time_create": "2024-07-09T12:00:00Z",
+      "time_update": "2024-07-09T12:00:00Z",
+      "is_published": true,
+      "category": 11,
+      "image": null,
+      "price": 49.99,
+      "tags": [9, 10, 11]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 23,
+    "fields": {
+      "title": "Hades",
+      "slug": "hades",
+      "content": "Hades is a rogue-like action RPG where players control Zagreus, the son of Hades, as he attempts to escape the Underworld, battling through procedurally-generated dungeons and facing off against mythological foes.",
+      "time_create": "2024-07-11T12:00:00Z",
+      "time_update": "2024-07-11T12:00:00Z",
+      "is_published": true,
+      "category": 13,
+      "image": null,
+      "price": 24.99,
+      "tags": [15, 16, 17]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 24,
+    "fields": {
+      "title": "Celeste",
+      "slug": "celeste",
+      "content": "Celeste is a platformer game where players control Madeline as she climbs the titular Celeste Mountain, overcoming various obstacles and confronting her inner demons.",
+      "time_create": "2024-07-12T12:00:00Z",
+      "time_update": "2024-07-12T12:00:00Z",
+      "is_published": true,
+      "category": 14,
+      "image": null,
+      "price": 14.99,
+      "tags": [18, 19, 20]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 25,
+    "fields": {
+      "title": "Among Us",
+      "slug": "among-us",
+      "content": "Among Us is a multiplayer party game where players work together on a spaceship, completing tasks and identifying impostors among the crew before they sabotage the mission.",
+      "time_create": "2024-07-13T12:00:00Z",
+      "time_update": "2024-07-13T12:00:00Z",
+      "is_published": true,
+      "category": 15,
+      "image": null,
+      "price": 4.99,
+      "tags": [21, 22]
+    }
+  }
+,
+
+  {
+    "model": "store.posts",
+    "pk": 35,
+    "fields": {
+      "title": "Overwatch",
+      "slug": "overwatch",
+      "content": "Overwatch is a team-based multiplayer first-person shooter game where players select from a roster of unique heroes, each with their own abilities, and work together to complete objectives.",
+      "time_create": "2024-07-14T12:00:00Z",
+      "time_update": "2024-07-14T12:00:00Z",
+      "is_published": true,
+      "category": 1,
+      "image": null,
+      "price": 29.99,
+      "tags": [1, 2, 3]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 36,
+    "fields": {
+      "title": "Stardew Valley",
+      "slug": "stardew-valley",
+      "content": "Stardew Valley is a farming simulation game where players inherit a run-down farm and must restore it to its former glory, while also engaging in social activities, exploration, and dungeon crawling.",
+      "time_create": "2024-07-15T12:00:00Z",
+      "time_update": "2024-07-15T12:00:00Z",
+      "is_published": true,
+      "category": 2,
+      "image": null,
+      "price": 14.99,
+      "tags": [4, 5, 6]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 37,
+    "fields": {
+      "title": "Subnautica",
+      "slug": "subnautica",
+      "content": "Subnautica is an open-world survival game set on an alien ocean planet, where players must explore the depths, gather resources, and craft equipment to survive against the planet's hostile fauna.",
+      "time_create": "2024-07-16T12:00:00Z",
+      "time_update": "2024-07-16T12:00:00Z",
+      "is_published": true,
+      "category": 3,
+      "image": null,
+      "price": 24.99,
+      "tags": [7, 8, 9]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 38,
+    "fields": {
+      "title": "Terraria",
+      "slug": "terraria",
+      "content": "Terraria is a sandbox adventure game where players explore, build, and fight in a procedurally-generated 2D world, encountering various enemies, bosses, and treasures.",
+      "time_create": "2024-07-17T12:00:00Z",
+      "time_update": "2024-07-17T12:00:00Z",
+      "is_published": true,
+      "category": 4,
+      "image": null,
+      "price": 19.99,
+      "tags": [10, 11, 12]
+    }
+  },
+  {
+    "model": "store.posts",
+    "pk": 39,
+    "fields": {
+      "title": "Minecraft",
+      "slug": "minecraft",
+      "content": "Minecraft is a sandbox game where players can build, explore, and survive in a blocky, procedurally-generated world, gathering resources and crafting items to create their own adventures.",
+      "time_create": "2024-07-18T12:00:00Z",
+      "time_update": "2024-07-18T12:00:00Z",
+      "is_published": true,
+      "category": 5,
+      "image": null,
+      "price": 24.99,
+      "tags": [13, 14, 15]
+    }
+  }
+]
+
+
+
