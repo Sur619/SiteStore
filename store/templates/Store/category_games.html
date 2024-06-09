@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/category.css' %}">
+<div class="container mt-5">
+    <h2 class="text-primary mb-4">{{ category.name }}</h2>
+    <div class="row">
+        {% for game in games %}
+        <div class="col-md-4 mb-4">
+            <div class="game-card">
+                <div class="game-card-body">
+                    <h3 class="game-card-title">{{ game.title }}</h3>
+                    <div class="game-card-content">
+                        <p>{{ game.content }}</p>
+                        <a href="{{ game.get_absolute_url }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

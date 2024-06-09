@@ -1,5 +1,85 @@
+/* Общие стили для синего оформления и черной темы */
+
+/* Стили для навигационной панели */
+.navbar-nav {
+    margin-right: auto; /* Перемещаем элементы вправо */
+}
+
+.navbar-toggler {
+    margin-left: auto; /* Перемещаем переключатель навбара вправо */
+}
+
+.theme-switch-container {
+    margin-left: 10px; /* Добавляем небольшой отступ между переключателем темы и навбаром */
+}
+
+.theme-switch-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999; /* устанавливаем более высокий уровень z-index, чтобы переключатель был выше других элементов */
+}
+
+.theme-switch {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    position: relative;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #007bff; /* Изменено на синий цвет */
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #007bff; /* Изменено на синий цвет */
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Дополнительные стили для черной темы */
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Стили для основного контента */
 body {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Светлый серый фон */
 }
 
 h2 {
@@ -9,15 +89,18 @@ h2 {
 
 .navbar-brand {
     font-weight: bold;
+    color: #007bff; /* Синий цвет для бренда */
 }
 
 .nav-link {
     font-size: 1.1rem;
+    color: #007bff; /* Синий цвет для ссылок */
 }
 
 .card {
     border: none;
     transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень по умолчанию */
 }
 
 .card:hover {
@@ -26,7 +109,7 @@ h2 {
 }
 
 .card-title a {
-    color: #007bff;
+    color: #007bff; /* Синий цвет для заголовков карточек */
     text-decoration: none;
 }
 
@@ -34,9 +117,11 @@ h2 {
     text-decoration: underline;
 }
 
+/* Добавляем синий цвет для кнопок */
 .btn-primary {
-    background-color: #007bff;
+    background-color: #007bff; /* Синий цвет для кнопок */
     border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s; /* Анимация для изменения цвета кнопок */
 }
 
 .btn-primary:hover {
@@ -45,11 +130,5 @@ h2 {
 }
 
 footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
+    background-color: #f8f9fa; /* Светлый серый фон для подвала */
 }
