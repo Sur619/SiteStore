@@ -1,24 +1,44 @@
+<!-- base.html -->
 {% load static %}
 {% load post_tag %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Title{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'Store/css/styles.css' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'Store/css/styles.css' %}"/> <!-- Подключаем наш файл стилей -->
+    <link rel="stylesheet" href="{% static 'Store/css/category_list.css' %}"/> <!-- Подключаем наш файл стилей -->
+    <link rel="stylesheet" href="{% static 'Store/css/category_games.css' %}"/> <!-- Подключаем наш файл стилей -->
     {% block extra_css %}{% endblock %}
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <nav>
-        <ul>
-            <li><a href="{% url 'main_page' %}">Main Page</a></li>
-            <li><a href="{% url 'category' %}">Category</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        {% block content %}{% endblock %}
-    </div>
+<!-- Переключатель темы -->
+<div class="theme-switch-container">
+    <label class="theme-switch" for="theme-switch">
+        <input type="checkbox" id="theme-switch">
+        <div class="slider round"></div>
+    </label>
+</div>
 
-    {% show_all_tags %}
+{% include 'topbar.html' %} <!-- Подключаем отдельный файл с верхней панелью задач -->
+
+<div class="container mt-4 main-container"> <!-- Добавляем класс main-container -->
+    {% block content %}{% endblock %}
+</div>
+
+{% show_all_tags %}
+
+<footer class="bg-light text-center py-3 mt-4">
+    <p>&copy; 2024 Game Store. All Rights Reserved.</p>
+</footer>
+
+<!-- JavaScript для обработки переключения темы -->
+<script src="{% static 'Store/js/theme-switch.js' %}"></script>
 </body>
 </html>

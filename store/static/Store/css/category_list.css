@@ -1,0 +1,99 @@
+/* Основные стили */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Стили для категорий */
+.categories {
+    margin-top: 30px;
+}
+
+.category-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
+
+.category-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    border-radius: 8px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 150px; /* Высота карточки */
+    border: 2px solid transparent; /* Добавляем прозрачную рамку */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+    border-color: #007bff; /* Цвет рамки при наведении */
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0; /* Убираем отступы */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center; /* Центрируем текст */
+    margin: 0; /* Убираем отступы */
+}
+
+/* Дополнительные стили для акцентов */
+.text-primary {
+    color: #007bff !important;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.border-0 {
+    border: none !important;
+}
+
+/* Стили для сетки */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    box-sizing: border-box;
+}

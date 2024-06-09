@@ -2,8 +2,6 @@ from django.db import models
 from django.urls import reverse
 
 
-# Create your models here.
-
 class Posts(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, unique=True, db_index=True)
@@ -13,6 +11,9 @@ class Posts(models.Model):
     is_published = models.BooleanField(default=False)
     category = models.ForeignKey('Category', on_delete=models.PROTECT)
     tags = models.ManyToManyField('TagPost', blank=True, related_name='tags')
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    image = models.ImageField(upload_to='images/', blank=True)
+
 
     def __str__(self):
         return self.title
@@ -25,8 +26,11 @@ class Category(models.Model):
     name = models.CharField(max_length=100, unique=True, db_index=True)
     slug = models.SlugField(max_length=100, unique=True, db_index=True)
 
+    def __str__(self):
+        return self.name
+
     def get_absolute_url(self):
-        return reverse('category')
+        return reverse('categories')
 
 
 class TagPost(models.Model):
@@ -38,3 +42,11 @@ class TagPost(models.Model):
 
     def get_absolute_url(self):
         return reverse('tag', kwargs={'tag_slug': self.slug})
+
+
+class Images(models.Model):
+    slug = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.slug

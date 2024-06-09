@@ -1,0 +1,66 @@
+
+[
+  {
+    "model": "store.category",
+    "pk": 9,
+    "fields": {
+      "name": "Puzzle",
+      "slug": "puzzle",
+      "image": null
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 10,
+    "fields": {
+      "name": "Sports",
+      "slug": "sports",
+      "image": null
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 11,
+    "fields": {
+      "name": "Simulation",
+      "slug": "simulation",
+      "image": null
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 12,
+    "fields": {
+      "name": "Racing",
+      "slug": "racing",
+      "image": null
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 13,
+    "fields": {
+      "name": "Fighting",
+      "slug": "fighting",
+      "image": null
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 14,
+    "fields": {
+      "name": "Music",
+      "slug": "music",
+      "image": null
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 15,
+    "fields": {
+      "name": "Educational",
+      "slug": "educational",
+      "image": null
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "model": "store.tagpost",
+    "pk": 18,
+    "fields": {
+      "tag": "Story-Driven",
+      "slug": "story-driven"
+    }
+  },
+  {
+    "model": "store.tagpost",
+    "pk": 19,
+    "fields": {
+      "tag": "Norse",
+      "slug": "norse"
+    }
+  },
+
+
+  {
+    "model": "store.tagpost",
+    "pk": 22,
+    "fields": {
+      "tag": "Robotic",
+      "slug": "robotic"
+    }
+  },
+  {
+    "model": "store.tagpost",
+    "pk": 23,
+    "fields": {
+      "tag": "Greek Mythology",
+      "slug": "greek-mythology"
+    }
+  },
+  {
+    "model": "store.tagpost",
+    "pk": 24,
+    "fields": {
+      "tag": "Challenge",
+      "slug": "challenge"
+    }
+  },
+  {
+    "model": "store.tagpost",
+    "pk": 25,
+    "fields": {
+      "tag": "Treasure Hunt",
+      "slug": "treasure-hunt"
+    }
+  }
+]

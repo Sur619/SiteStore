@@ -5,27 +5,17 @@ from django.template.loader import render_to_string
 from store.models import Posts, Category, TagPost
 
 
+from django.shortcuts import render
+from .models import Posts
+
 def main_page(request):
     posts = Posts.objects.filter(is_published=True)
-    posts_category = Category.objects.all()
-    categories = Category.objects.filter(id__in=posts.values('category_id'))
-    data = {
-        'post': posts,
-        'posts_category': posts_category,
-        'categories': categories,
-
-    }
-    return render(request, 'store/main_page.html', data)
+    title = "Latest Games"
+    return render(request, 'store/main_page.html', {'posts': posts, 'title': title})
 
 
-def category(request):
-    categories = Category.objects.all()
-    posts = Posts.objects.all()
-    data = {
-        'categories': categories,
-        'posts': posts,
-    }
-    return render(request, 'store/includes/categories.html', data)
+
+
 
 
 def post(request, post_slug):
@@ -48,6 +38,42 @@ def show_tag_postlist(request, tag_slug):
     }
 
     return render(request, 'store/main_page.html', data)
+
+
+
+
+
+def category_list(request):
+    categories = Category.objects.all()
+    return render(request, 'Store/category.html', {'categories': categories})
+
+def category_games(request, category_id):
+    category = get_object_or_404(Category, id=category_id)
+    games = category.posts_set.all()
+    return render(request, 'Store/category_games.html', {'category': category, 'games': games})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def page_not_found(request, exception):
